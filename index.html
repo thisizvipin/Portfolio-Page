@@ -33,7 +33,7 @@
                 <li><a href="#hello">Hello</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <!-- <li><a href="#blog">blog</a></li> -->
+                <li><a href="#blog">blog</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
@@ -59,7 +59,7 @@
             <li><a href="#hello">Hello</a></li>
             <li><a href="#resume">Resume</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <!-- <li><a href="#blog">blog</a></li> -->
+            <li><a href="#blog">blog</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -249,17 +249,41 @@
     <!--Resume-->
 
     <!--Portfolio-->
+
     <section id="portfolio" class="container section">
       <div class="row">
         <div class="col-md-12">
           <h2 id="portfolio_header" class="section__title">My projects_</h2>
         </div>
       </div>
+      <!-- <div class="row portfolio-menu">
+        <div class="col-md-12">
+          <nav>
+            <ul>
+              <li><a href="#" data-portfolio-target-tag="all">all</a></li>
+              <li>
+                <a href="#" data-portfolio-target-tag="mobile apps"
+                  >mobile apps</a
+                >
+              </li>
+              <li>
+                <a href="#" data-portfolio-target-tag="web-sites">web-sites</a>
+              </li>
+              <li>
+                <a href="#" data-portfolio-target-tag="landing-pages"
+                  >landing pages</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div> -->
       <div class="portfolio-cards">
         <div
           class="row project-card"
           data-toggle="modal"
           data-target="#portfolioModal-1"
+          data-portfolio-tag="web-sites"
         >
           <div class="col-md-6 col-lg-5 project-card__img">
             <img
@@ -270,53 +294,140 @@
           </div>
           <div class="col-md-6 col-lg-7 project-card__info">
             <h3 class="project-card__title">
-              Mobile and desktop app for Covid -19
+              Chat web application for mobile and desktop
             </h3>
             <p class="project-card__description">
-              Simple covid website with clean UI and designed for better user
-              experience. Conatains info about prevention, symptoms, quarantine
-              and spreads.
+              This is a chat app made using react.js at front end and
+              chatengine.io at backhand. This app needs login ID and passwords
+              for user to enter, Application contains different communities and
+              admin can add persons in a community.
             </p>
+            <p class="project-card__stack">Used stack:</p>
+            <ul class="tags">
+              <li>React.js</li>
+              <li>html5</li>
+              <li>css3</li>
+              <li>JavaScript</li>
+              <li>chatengine.io</li>
+            </ul>
             <a
-              href="https://github.com/thisizvipin/covid-19"
+              href="https://chat-appliaction.netlify.app/"
               class="project-card__link"
-              >view on GitHub</a
+              >Live Preview Here</a
             >
           </div>
         </div>
+        <!-- project-1 ends here -->
         <div
           class="row project-card"
           data-toggle="modal"
           data-target="#portfolioModal-2"
+          data-portfolio-tag="mobile apps"
         >
           <div class="col-md-6 col-lg-5 project-card__img">
             <img
               class=""
-              src="assets/img/img_project_2_mono.png"
+              src="assets/img/img_project_2_mono.pn"
               alt="project-img"
             />
           </div>
           <div class="col-md-6 col-lg-7 project-card__info">
-            <h3 class="project-card__title">
-              Weather App using AccuWeather API
-            </h3>
+            <h3 class="project-card__title">Recipe Search App</h3>
             <p class="project-card__description">
-              A helpfull weather app that works with API, which tells about
-              weather conditions, temperatures. App also includes day and night
-              mode which works automatically.
+              This is Dish search application made using Material UI and React
+              for the frontend and API is used for the backend to filter through
+              results for a ingredient/dish.
             </p>
+            <p class="project-card__stack">Used stack:</p>
+            <ul class="tags">
+              <li>React.js</li>
+              <li>html5</li>
+              <li>css3</li>
+              <li>JavaScript</li>
+              <li>Material UI</li>
+              <li>API</li>
+            </ul>
             <a
-              href="https://github.com/thisizvipin/weather-app"
+              href="https://github.com/thisizvipin/Dish-Application"
               class="project-card__link"
-              >View on GitHub</a
+              >View Source Code</a
             >
           </div>
         </div>
+        <!-- project-2 ends here  -->
+        <div
+          class="row project-card"
+          data-toggle="modal"
+          data-target="#portfolioModal-3"
+          data-portfolio-tag="landing-pages"
+        >
+          <div class="col-md-6 col-lg-5 project-card__img">
+            <img
+              class=""
+              src="assets/img/img_project_3_mono.png"
+              alt="project-img"
+            />
+          </div>
+          <div class="col-md-6 col-lg-7 project-card__info">
+            <h3 class="project-card__title">Spotify Clone Application</h3>
+            <p class="project-card__description">
+              This is a spotify-clone made using React and Spotify API. This app
+              is S_P_A type of project.
+            </p>
+            <p class="project-card__stack">Used stack:</p>
+            <ul class="tags">
+              <li>React.js</li>
+              <li>html5</li>
+              <li>css3</li>
+              <li>JavaScript</li>
+              <li>Spotify Developer API</li>
+            </ul>
+            <a
+              href="https://github.com/thisizvipin/Spotify-Clone-Application"
+              class="project-card__link"
+              >View Source Code</a
+            >
+          </div>
+        </div>
+        <!-- portfolio modal-3 ends here  -->
+        <div
+          class="row project-card"
+          data-toggle="modal"
+          data-target="#portfolioModal-4"
+          data-portfolio-tag="landing-pages"
+        >
+          <div class="col-md-6 col-lg-5 project-card__img">
+            <img
+              class=""
+              src="assets/img/img_project_4_mono.png"
+              alt="project-img"
+            />
+          </div>
+          <div class="col-md-6 col-lg-7 project-card__info">
+            <h3 class="project-card__title">Personal Portfolio Website</h3>
+            <p class="project-card__description">
+              This web-page is created for personal use as a portfolio. This
+              website is aimed for the Clean UI/UX experience for user.
+            </p>
+            <p class="project-card__stack">Used stack:</p>
+            <ul class="tags">
+              <li>html5</li>
+              <li>css3</li>
+              <li>JavaScript</li>
+            </ul>
+            <a
+              href="https://thisizvipin-dev.netlify.app/"
+              class="project-card__link"
+              >Live Preview Here</a
+            >
+          </div>
+        </div>
+        <!-- portfolio modal-4 ends here  -->
       </div>
     </section>
     <!--Portfolio-->
 
-    <!--Blog
+    <!-- Blog -->
     <section id="blog" class="container section">
       <div class="row">
         <div class="col-md-12">
@@ -380,7 +491,7 @@
         </div>
       </div>
     </section>
-    Blog-->
+    <!-- Blog -->
 
     <!--Contact-->
     <div
@@ -480,7 +591,7 @@
     </div>
     <!--Contact-->
 
-    <!-- Portfolio Modal-1 
+    <!-- Portfolio Modal-1 -->
     <div
       class="modal fade portfolio-modal"
       id="portfolioModal-1"
@@ -502,7 +613,7 @@
           </div>
           <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
             <p class="portfolio-modal__title">
-              MOBILE AND DESKTOP APP FOR COVID -19
+              CHAT WEB APPLICATION FOR MOBILE AND DESKTOP
             </p>
             <img
               class="portfolio-modal__img"
@@ -510,31 +621,53 @@
               alt="modal_img"
             />
             <p class="portfolio-modal__description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
-              ut perspiciatis undeomnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia conse.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quibusdam natus voluptatibus quos earum provident illo, temporibus
+              quae, dicta quidem eligendi vero aperiam facere porro quod nemo
+              dolorum explicabo sequi consectetur fuga nulla! At, saepe placeat
+              aliquid iste dicta deserunt cum perspiciatis suscipit facilis
+              repudiandae quis, quam laboriosam molestias distinctio, temporibus
+              tempora dolor illo. Laudantium aspernatur, omnis quo incidunt,
+              corrupti, nobis ipsam veniam magnam eius quibusdam doloribus.
+              Neque unde dolores blanditiis aliquid adipisci atque in ducimus
+              ipsam consequatur, quia totam quo enim rerum iure ex dolorum alias
+              voluptas quam. Numquam, temporibus. Minus commodi aut, a nisi in
+              earum, nesciunt fugiat accusantium id quibusdam pariatur. Esse
+              laboriosam obcaecati debitis necessitatibus facere inventore magni
+              ducimus aspernatur consectetur ullam quis sed voluptatem dolore
+              sunt, non quisquam commodi culpa iure alias iusto tempore
+              mollitia, ipsum totam. Aperiam reiciendis odio quod earum quas
+              voluptatum provident iste qui eius magnam saepe, blanditiis
+              architecto esse quis dolore vero repellendus aliquam
+              exercitationem doloribus maiores. Maiores id sed reiciendis magni
+              numquam officiis necessitatibus iusto, sit velit minus. Maiores
+              cumque nihil eaque iste modi a nisi officiis, laudantium ipsum
+              ipsam officia quo voluptas. Esse, accusamus. Quisquam veritatis
+              optio laborum, nulla quibusdam tempora porro esse, quos eveniet
+              eum harum quaerat tempore eius.
             </p>
             <div class="portfolio-modal__link">
-              <a href="https://github.com/thisizvipin/covid-19"
-                >view on GitHub</a
+              <a href="https://chat-appliaction.netlify.app/"
+                >Live Preview Here</a
               >
+            </div>
+            <div class="portfolio-modal__stack">
+              <p class="portfolio-modal__stack-title">Using stack:</p>
+              <ul class="tags">
+                <li>React.js</li>
+                <li>html5</li>
+                <li>css3</li>
+                <li>JavaScript</li>
+                <li>chatengine.io</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-     Portfolio Modal-1 ends -->
+    <!-- Portfolio Modal-1 ends -->
 
-    <!-- Portfolio Modal-2 
+    <!-- Portfolio Modal-2 -->
     <div
       class="modal fade portfolio-modal"
       id="portfolioModal-2"
@@ -555,38 +688,206 @@
             </button>
           </div>
           <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
-            <p class="portfolio-modal__title">
-              WEATHER APP USING ACCUWEATHER API
-            </p>
+            <p class="portfolio-modal__title">RECIPE SEARCH APP</p>
             <img
               class="portfolio-modal__img"
-              src="assets/img/img_project_2_mono.png"
+              src="assets/img/img_project_2_mono.pn"
               alt="modal_img"
             />
             <p class="portfolio-modal__description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
-              ut perspiciatis undeomnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia conse.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Provident porro aliquid doloremque corporis ullam, similique
+              aspernatur libero perferendis consequatur ex excepturi, animi
+              fugit impedit, temporibus reiciendis odio? Asperiores laudantium
+              ad eius, eaque perspiciatis nostrum quos nihil optio veritatis
+              sequi ipsum aspernatur magni repudiandae, saepe incidunt repellat
+              placeat! Quaerat, delectus ullam pariatur, in suscipit ipsum
+              impedit sunt iste voluptatibus fugit deserunt. Quia delectus iste
+              recusandae placeat quos. Praesentium quibusdam laudantium et modi
+              unde assumenda, consequuntur dicta incidunt vitae ea, architecto
+              reprehenderit excepturi optio. Ipsam libero laboriosam quibusdam
+              ratione alias, iure voluptate omnis. Voluptates atque error quod
+              excepturi libero adipisci neque perspiciatis maxime corrupti vero
+              minus, perferendis nam amet ratione voluptate facilis deserunt.
+              Placeat aspernatur ut distinctio, odit itaque facere veritatis
+              illum esse incidunt in numquam asperiores aliquid laborum ullam
+              laboriosam quos? Quod quos quam error perspiciatis neque
+              laudantium rerum tempore provident aliquid iusto vero autem illo
+              fuga fugiat voluptatum molestiae, quo mollitia asperiores modi,
+              non at. Corporis, assumenda sequi consectetur culpa sint quia
+              consequatur unde tempore, et praesentium laudantium deleniti enim
+              soluta quam error, aperiam quos quidem inventore nobis molestiae
+              nisi numquam sit hic. Aliquid sed repudiandae culpa atque
+              repellendus nulla ullam aut natus excepturi maxime nihil dolore,
+              quos optio voluptatibus?
             </p>
             <div class="portfolio-modal__link">
-              <a href="https://github.com/thisizvipin/weather-app"
-                >view on GitHub</a
+              <a href="https://github.com/thisizvipin/Dish-Application"
+                >View Source Code</a
               >
+            </div>
+            <div class="portfolio-modal__stack">
+              <p class="portfolio-modal__stack-title">Using stack:</p>
+              <ul class="tags">
+                <li>React.js</li>
+                <li>html5</li>
+                <li>css3</li>
+                <li>JavaScript</li>
+                <li>Material UI</li>
+                <li>API</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-     Portfolio Modal -->
+    <!-- Portfolio Modal-2 ends -->
+
+    <!-- portfolio modal-3  -->
+    <div
+      class="modal fade portfolio-modal"
+      id="portfolioModal-3"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+            <p class="portfolio-modal__title">SPOTIFY CLONE APPLICATION</p>
+            <img
+              class="portfolio-modal__img"
+              src="assets/img/img_project_1_mono.pn"
+              alt="modal_img"
+            />
+            <p class="portfolio-modal__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quibusdam natus voluptatibus quos earum provident illo, temporibus
+              quae, dicta quidem eligendi vero aperiam facere porro quod nemo
+              dolorum explicabo sequi consectetur fuga nulla! At, saepe placeat
+              aliquid iste dicta deserunt cum perspiciatis suscipit facilis
+              repudiandae quis, quam laboriosam molestias distinctio, temporibus
+              tempora dolor illo. Laudantium aspernatur, omnis quo incidunt,
+              corrupti, nobis ipsam veniam magnam eius quibusdam doloribus.
+              Neque unde dolores blanditiis aliquid adipisci atque in ducimus
+              ipsam consequatur, quia totam quo enim rerum iure ex dolorum alias
+              voluptas quam. Numquam, temporibus. Minus commodi aut, a nisi in
+              earum, nesciunt fugiat accusantium id quibusdam pariatur. Esse
+              laboriosam obcaecati debitis necessitatibus facere inventore magni
+              ducimus aspernatur consectetur ullam quis sed voluptatem dolore
+              sunt, non quisquam commodi culpa iure alias iusto tempore
+              mollitia, ipsum totam. Aperiam reiciendis odio quod earum quas
+              voluptatum provident iste qui eius magnam saepe, blanditiis
+              architecto esse quis dolore vero repellendus aliquam
+              exercitationem doloribus maiores. Maiores id sed reiciendis magni
+              numquam officiis necessitatibus iusto, sit velit minus. Maiores
+              cumque nihil eaque iste modi a nisi officiis, laudantium ipsum
+              ipsam officia quo voluptas. Esse, accusamus. Quisquam veritatis
+              optio laborum, nulla quibusdam tempora porro esse, quos eveniet
+              eum harum quaerat tempore eius.
+            </p>
+            <div class="portfolio-modal__link">
+              <a href="https://github.com/thisizvipin/Spotify-Clone-Application"
+                >View Source Code</a
+              >
+            </div>
+            <div class="portfolio-modal__stack">
+              <p class="portfolio-modal__stack-title">Using stack:</p>
+              <ul class="tags">
+                <li>React.js</li>
+                <li>html5</li>
+                <li>css3</li>
+                <li>JavaScript</li>
+                <li>Spotify Developer API</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio model-3 ends here  -->
+
+    <!-- portfolio modal-4  -->
+    <div
+      class="modal fade portfolio-modal"
+      id="portfolioModal-4"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+            <p class="portfolio-modal__title">SPOTIFY CLONE APPLICATION</p>
+            <img
+              class="portfolio-modal__img"
+              src="assets/img/img_project_4_mono.png"
+              alt="modal_img"
+            />
+            <p class="portfolio-modal__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Quibusdam natus voluptatibus quos earum provident illo, temporibus
+              quae, dicta quidem eligendi vero aperiam facere porro quod nemo
+              dolorum explicabo sequi consectetur fuga nulla! At, saepe placeat
+              aliquid iste dicta deserunt cum perspiciatis suscipit facilis
+              repudiandae quis, quam laboriosam molestias distinctio, temporibus
+              tempora dolor illo. Laudantium aspernatur, omnis quo incidunt,
+              corrupti, nobis ipsam veniam magnam eius quibusdam doloribus.
+              Neque unde dolores blanditiis aliquid adipisci atque in ducimus
+              ipsam consequatur, quia totam quo enim rerum iure ex dolorum alias
+              voluptas quam. Numquam, temporibus. Minus commodi aut, a nisi in
+              earum, nesciunt fugiat accusantium id quibusdam pariatur. Esse
+              laboriosam obcaecati debitis necessitatibus facere inventore magni
+              ducimus aspernatur consectetur ullam quis sed voluptatem dolore
+              sunt, non quisquam commodi culpa iure alias iusto tempore
+              mollitia, ipsum totam. Aperiam reiciendis odio quod earum quas
+              voluptatum provident iste qui eius magnam saepe, blanditiis
+              architecto esse quis dolore vero repellendus aliquam
+              exercitationem doloribus maiores. Maiores id sed reiciendis magni
+              numquam officiis necessitatibus iusto, sit velit minus. Maiores
+              cumque nihil eaque iste modi a nisi officiis, laudantium ipsum
+              ipsam officia quo voluptas. Esse, accusamus. Quisquam veritatis
+              optio laborum, nulla quibusdam tempora porro esse, quos eveniet
+              eum harum quaerat tempore eius.
+            </p>
+            <div class="portfolio-modal__link">
+              <a href="https://thisizvipin-dev.netlify.app/"
+                >Live Preview Here</a
+              >
+            </div>
+            <div class="portfolio-modal__stack">
+              <p class="portfolio-modal__stack-title">Using stack:</p>
+              <ul class="tags">
+                <li>html5</li>
+                <li>css3</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio modal-4 ends here  -->
 
     <script src="assets/js/jquery-2.2.4.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
